@@ -1,0 +1,9 @@
+Primer dia del proyecto:
+He empezado este proyecto el 16/01/24 a las 20:55, hoy me he dedicado principalmente a realizar un gdd sobre el que basaré mis proximos días, puede ser que me haya venido un poco arriba con todas las implemenaciones que quiero realizar pero siempre puedo volver sobre mis pasos para eliminar algo.
+De cualquier forma, he subido el gdd y al crear el proyecto en únity me he parado a pensar en un posible nombre para el juego, se me ha ocurrido preguntarle a chatgpt por posibles nombres.
+Mi primera idea ha sido "somnum tenebris" desgraciadamente hay libros y juegos con un nombre parecido, por lo que pensaré una alternativa.
+Ejemplos de nombres:
+	-evigilantes in somnia
+	-mortem album (Lista de muerte)
+	-delirios de  ...
+	-mortiferum seductiones
