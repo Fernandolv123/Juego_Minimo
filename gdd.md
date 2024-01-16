@@ -7,7 +7,7 @@ Este es un juego de terror en el que la única forma de no morir es seguir una se
 La cámara tendra un poco de libertad para poder mirar arriba y abajo pero no hacia los lados salvo que se añadan nuevas reglas que así lo requieran.
 
 ## Descripción del juego
-Nos encontramos en un pasillo con una lista de reglas a seguir si pretendes vivir un día más. Al final del pasillo habrá una puerta que conectará con otro pasillo de forma infinita o hasta que el desarrollador considere.
+Nos encontramos en un pasillo con una lista de reglas a seguir si pretendes vivir un día más. Al final del pasillo habrá una puerta que conectará con otro pasillo de forma infinita o hasta que de tiempo.
 
 ## Lista de reglas
 
@@ -16,26 +16,27 @@ No se podrá acceder a esta lista de reglas salvo en áreas de descanso
 
 ### Reglas:
 
-	- Si escuchas unos ruidos provenientes de tu espalda debes quedarte quieto sin importar lo que oigas hasta que notes a una presencia desvanecerse.
-	- Si ves algo mirandote fijamente en la oscuridad, date la vuelta y evita el contacto visual con la entidad bajo ningún caso
-	- Debes llevar la cuenta de la cantidad de salas superadas, si el numero al final del pasillo no corresponde con la siguiente puerta, date la vuelta y vuelve por donde has venido
-	- Si notas el ambiente demasiado calmado, corre lo más rapido que puedas hasta el final
+- Si escuchas unos ruidos provenientes de tu espalda debes quedarte quieto sin importar lo que oigas hasta que notes a una presencia desvanecerse.
+- Si ves algo mirandote fijamente en la oscuridad, date la vuelta y evita el contacto visual con la entidad bajo ningún caso
+- Debes llevar la cuenta de la cantidad de salas superadas, si el numero al final del pasillo no corresponde con la siguiente puerta, date la vuelta y vuelve por donde has venido
+- Si notas el ambiente demasiado calmado, corre lo más rapido que puedas hasta el final
 
 ### Reglas generales
 
-Estas son reglas generales que deben existir siempre dentro de la lista, si nimportar el resto
-	- Bajo ningun concepto debes correr, salvo que otra regla más importante lo indique
-	- Pestañea cada cierto tiempo, las alucinaciones pueden presentarse de otra forma
+Estas son reglas generales que deben existir siempre dentro de la lista, sin importar el caso:
+
+- Bajo ningun concepto debes correr, salvo que otra regla más importante lo indique
+- Pestañea cada cierto tiempo, las alucinaciones pueden presentarse de otra forma
 
 Cada 5 salas, encontrarás una sala de descanso, la lista de reglas se actualizará mostrando nuevas reglas añadidas.
 
 
-El juego se realizará en 3D cuya temática sea
+El juego se realizará en 3D cuya temática sea.
 
 ### Mecánica del juego
 
-El objetivo del juego consiste en llevar una cuenta de los pasillos superados por el jugador antes de conocer su aciago destino
+El objetivo del juego consiste en llevar una cuenta de los pasillos superados por el jugador antes de conocer su aciago destino.
 
 ### Marketing
 
-Creación de cuenta de instagram con el nombre del juego donde subiré distintos teasers e imagenes sobre el juego
+Creación de cuenta de instagram con el nombre del juego donde serán subidos distintos teasers e imagenes sobre el juego.
