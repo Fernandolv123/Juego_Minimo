@@ -7,3 +7,5 @@ Ejemplos de nombres:
 	-mortem album (Lista de muerte)
 	-delirios de  ...
 	-mortiferum seductiones
+	-ominis phantasmata (delirios aciagos)
+	-fatalis erroris (aciagos delirios)
