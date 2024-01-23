@@ -1,42 +1,42 @@
 # <Nombre_del_juego>
 
-Este es un juego de terror en el que la única forma de no morir es seguir una serie de pautas aleatorias anotadas en una libreta al principio del juego
+Este es un juego de terror en el que la ï¿½nica forma de no morir es seguir una serie de pautas aleatorias anotadas en una libreta al principio del juego
 
-## Visión general
-<Nombre_del_Juego> es un juego de terror ambientado en un espacio claustrofóbico. Dadas mis limitaciones técnicas, las únicas direcciones en las que el personaje se moverá son delante y detras contando con otros inputs para diferentes acciones como voltearse.
-La cámara tendra un poco de libertad para poder mirar arriba y abajo pero no hacia los lados salvo que se añadan nuevas reglas que así lo requieran.
+## Visiï¿½n general
+<Nombre_del_Juego> es un juego de terror ambientado en un espacio claustrofï¿½bico. Dadas mis limitaciones tï¿½cnicas, las ï¿½nicas direcciones en las que el personaje se moverï¿½ son delante y detras contando con otros inputs para diferentes acciones como voltearse.
+La cï¿½mara tendra un poco de libertad para poder mirar arriba y abajo pero no hacia los lados salvo que se aï¿½adan nuevas reglas que asï¿½ lo requieran.
 
-## Descripción del juego
-Nos encontramos en un pasillo con una lista de reglas a seguir si pretendes vivir un día más. Al final del pasillo habrá una puerta que conectará con otro pasillo de forma infinita o hasta que de tiempo.
+## Descripciï¿½n del juego
+Nos encontramos en un pasillo con una lista de reglas a seguir si pretendes vivir un dï¿½a mï¿½s. Al final del pasillo habrï¿½ una puerta que conectarï¿½ con otro pasillo de forma infinita o hasta que de tiempo.
 
 ## Lista de reglas
 
-La lista estará compuesta por reglas escogidas aleatoriamente de una lista aún más grande de reglas. Estas reglas estarán asociadas a determinados pasillos y deberán ser respetadas para no morir.
-No se podrá acceder a esta lista de reglas salvo en áreas de descanso
+La lista estarï¿½ compuesta por reglas escogidas aleatoriamente de una lista aï¿½n mï¿½s grande de reglas. Estas reglas estarï¿½n asociadas a determinados pasillos y deberï¿½n ser respetadas para no morir.
+No se podrï¿½ acceder a esta lista de reglas salvo en ï¿½reas de descanso
 
 ### Reglas:
 
 - Si escuchas unos ruidos provenientes de tu espalda debes quedarte quieto sin importar lo que oigas hasta que notes a una presencia desvanecerse.
-- Si ves algo mirandote fijamente en la oscuridad, date la vuelta y evita el contacto visual con la entidad bajo ningún caso
+- Si ves algo mirandote fijamente en la oscuridad, date la vuelta y evita el contacto visual con la entidad bajo ningï¿½n caso
 - Debes llevar la cuenta de la cantidad de salas superadas, si el numero al final del pasillo no corresponde con la siguiente puerta, date la vuelta y vuelve por donde has venido
-- Si notas el ambiente demasiado calmado, corre lo más rapido que puedas hasta el final
+- Si notas el ambiente demasiado calmado, corre lo mï¿½s rapido que puedas hasta el final
 
 ### Reglas generales
 
 Estas son reglas generales que deben existir siempre dentro de la lista, sin importar el caso:
 
-- Bajo ningun concepto debes correr, salvo que otra regla más importante lo indique
-- Pestañea cada cierto tiempo, las alucinaciones pueden presentarse de otra forma
+- Bajo ningun concepto debes correr, salvo que otra regla mï¿½s importante lo indique
+- Pestaï¿½ea cada cierto tiempo, las alucinaciones pueden presentarse de otra forma
 
-Cada 5 salas, encontrarás una sala de descanso, la lista de reglas se actualizará mostrando nuevas reglas añadidas.
+Cada 5 salas, encontrarï¿½s una sala de descanso, la lista de reglas se actualizarï¿½ mostrando nuevas reglas aï¿½adidas.
 
 
-El juego se realizará en 3D cuya temática sea.
+El juego se realizarï¿½ en 3D cuya temï¿½tica sea.
 
-### Mecánica del juego
+### Mecï¿½nica del juego
 
 El objetivo del juego consiste en llevar una cuenta de los pasillos superados por el jugador antes de conocer su aciago destino.
 
 ### Marketing
 
-Creación de cuenta de instagram con el nombre del juego donde serán subidos distintos teasers e imagenes sobre el juego.
+Creaciï¿½n de cuenta de instagram con el nombre del juego donde serï¿½n subidos distintos teasers e imagenes sobre el juego.
