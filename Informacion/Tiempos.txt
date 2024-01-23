@@ -1,0 +1,12 @@
+El repositorio ha sido creado el 16/01/24 a las 20:55, desde este punto empezar� a idear el gdd
+He subido el gdd y mi trabajo inicial sobre este ha terminado por ahora a las 21:40 de este mismo d�a
+A las 21:40 y con 15 minutos para terminar la clase, he decidido dedicar estos 15 minutos a pensar un nombre para el juego y relacionarlo con su prop�sito.
+
+He empezado a recopilar assets de la asset store que me puedan ayudar en mi proyecto, empezando el 17/01/24 a las 20:40
+
+A las 19:35 del 18/1/2024 he decidido empezar a implementar las funcionalidades b�sicas de mi juego en unity.
+
+A las 21:55 he terminado mi desarrollo en unity por este dia
+
+D�a 4 del proyecto 
+A las 21:00 he empezado a realizar las issues para llevar un desarrollo m�s organizado de mi juego
