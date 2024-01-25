@@ -1,7 +1,7 @@
 Primer dia del proyecto:
-He empezado este proyecto el 16/01/24 a las 20:55, hoy me he dedicado principalmente a realizar un gdd sobre el que basarï¿½ mis proximos dï¿½as, puede ser que me haya venido un poco arriba con todas las implemenaciones que quiero realizar pero siempre puedo volver sobre mis pasos para eliminar algo.
-De cualquier forma, he subido el gdd y al crear el proyecto en ï¿½nity me he parado a pensar en un posible nombre para el juego, se me ha ocurrido preguntarle a chatgpt por posibles nombres.
-Mi primera idea ha sido "somnum tenebris" desgraciadamente hay libros y juegos con un nombre parecido, por lo que pensarï¿½ una alternativa.
+He empezado este proyecto el 16/01/24 a las 20:55, hoy me he dedicado principalmente a realizar un gdd sobre el que basaré mis proximos días, puede ser que me haya venido un poco arriba con todas las implemenaciones que quiero realizar pero siempre puedo volver sobre mis pasos para eliminar algo.
+De cualquier forma, he subido el gdd y al crear el proyecto en únity me he parado a pensar en un posible nombre para el juego, se me ha ocurrido preguntarle a chatgpt por posibles nombres.
+Mi primera idea ha sido "somnum tenebris" desgraciadamente hay libros y juegos con un nombre parecido, por lo que pensaré una alternativa.
 Ejemplos de nombres:
 	-evigilantes in somnia
 	-mortem album (Lista de muerte)
@@ -11,12 +11,18 @@ Ejemplos de nombres:
 	-fatalis erroris (aciagos delirios)
 
 Segundo dia del proyecto:
-He estado visitando la asset store en busca de posibles assets que me puedan ser ï¿½tiles, de todos modos no he dedicado demasiado tiempo, ya que hemos estado tratando otros temas en clase
+He estado visitando la asset store en busca de posibles assets que me puedan ser útiles, de todos modos no he dedicado demasiado tiempo, ya que hemos estado tratando otros temas en clase
 
 Tercer dia del proyecto:
-
 He empezado a realizar un prototipo jugable y mi vision inicial va tomando forma, aparentemente me he saltado algun paso del proyecto asique tendre que volver sobre mis pasos (que listo soy)
 
-Cuarto dï¿½a del proyecto:
-He empezado a las 21:00 a realizar las issues que ya deberia tener listas anteriormente pero no tenï¿½a, deberï¿½a haber empezado antes pero tube ciertos problemas con windows y vscode, he realizado 3 issues, una de ellas es sobre el gdd que ya tengo terminado, otra sobre el comportamiento base de la escena y finalmente he intentado detallar de la mejor forma posible todos los comportamientos que quiero que tenga mi personaje, m isiguiente issue serï¿½ sobre el comportamiento general de los pasillos, seguido del comportamiento de los enemigos y otro mï¿½s concreto de los pasillos
+Cuarto día del proyecto:
+He empezado a las 21:00 a realizar las issues que ya deberia tener listas anteriormente pero no tenía, debería haber empezado antes pero tube ciertos problemas con windows y vscode, he realizado 3 issues, una de ellas es sobre el gdd que ya tengo terminado, otra sobre el comportamiento base de la escena y finalmente he intentado detallar de la mejor forma posible todos los comportamientos que quiero que tenga mi personaje, m isiguiente issue será sobre el comportamiento general de los pasillos, seguido del comportamiento de los enemigos y otro más concreto de los pasillos
 
+Quinto dia del proyecto:
+He empezado solucionando algunos problemas creados por mi mal manejo de github a las 19:20, tras haberlos solucionado (aproximadamente a las 19:40), he dedicado un tiempo a la creación de nuevos issues hasta las 20:20.
+Una vez terminado de crear los nuevos issues, he decidido empezar a programar funcionalidades en el juego. He mejorado el script del personaje para terminar las funcionalidades y he pensado la lógica de los niveles. Crearé un script general para estos y crearé uno personalizado heredado de este para cada uno de los niveles.
+
+Sexto día del proyecto:
+Cuando empece con esta idea pense que todo iba a ser mucho más rápido, de cualquier modo, he trabajado con la herencia de unity por primera vez, y debo decir que me ha resultado de lo más útil, tanto de hecho, que seguiré con el desarrollo del juego más alla del prototypo entregable que entregare.
+Este prototipo constará con principio y final, y las reglas serán facilmente visibles al principio, por lo que únicamente nos moveremos por unos pocos pasillos. Mi plan es ampliar el juego lo máximo posible en base a mis capacidades.
