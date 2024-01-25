@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour
     private AudioSource audio;
     private Rigidbody rb;
     private bool moving = false;
+    private bool croaching = false;
     private int position = 1;
     private bool canMove = true;
     private bool canRotate=true;
@@ -24,10 +26,27 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftControl)){
+            StartCoroutine("Croaching",new Vector3(1,0.5f,1));
+            croaching = true;
+        } 
+
+        if (Input.GetKeyUp(KeyCode.LeftControl)){
+            StartCoroutine("Croaching",new Vector3(1,1f,1));
+            croaching = false;
+        }
 
         if (Input.GetKey(KeyCode.W) && canMove){
             //W go forward
-            transform.position += Vector3.forward*speed * Time.deltaTime * position;
+            if (croaching){
+                transform.position += Vector3.forward*(speed/2) * Time.deltaTime * position;
+            } else if (Input.GetKey(KeyCode.LeftShift)){
+                transform.position += Vector3.forward*(speed*2) * Time.deltaTime * position;
+                moving=true;
+                return;
+            }else {
+                transform.position += Vector3.forward*speed * Time.deltaTime * position;
+            }
             moving=true;
             
         }else {
@@ -37,11 +56,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && canRotate){
             canMove = false;
             canRotate = false;
-            //S turn around
-            //transform.Rotate( 0, 1, 0 * Time.deltaTime );
             StartCoroutine("Turning");
-            //playerPosition.Rotate(Vector3.down*-180,Space.World);
             position *= -1;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Q)){
+            //Pestañeo
         }
     }
 
@@ -56,13 +76,29 @@ public class Player : MonoBehaviour
         canRotate=true;
     }
 
+
+    public IEnumerator Croaching(Vector3 setslace){
+    float counter = 0;
+    Vector3 startscale = transform.localScale;
+    while (counter < 0.5)
+    {
+        counter += Time.deltaTime;
+        transform.localScale = Vector3.Lerp(startscale, setslace, counter / 0.5f);
+        yield return null;
+    }
+    }
+
     IEnumerator Footsteps(){
         while(true){
-            if (moving){
+            if (moving && !croaching){
                 audio.PlayOneShot(footsteps[Random.Range(0,footsteps.Count)]);
                 yield return new WaitForSeconds(1f);
             }
             yield return null;
         }
+    }
+
+    public void ResetPosition(){
+        position = 1;
     }
 }
