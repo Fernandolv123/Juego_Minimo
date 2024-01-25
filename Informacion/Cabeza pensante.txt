@@ -24,5 +24,8 @@ He empezado solucionando algunos problemas creados por mi mal manejo de github a
 Una vez terminado de crear los nuevos issues, he decidido empezar a programar funcionalidades en el juego. He mejorado el script del personaje para terminar las funcionalidades y he pensado la lógica de los niveles. Crearé un script general para estos y crearé uno personalizado heredado de este para cada uno de los niveles.
 
 Sexto día del proyecto:
+Los miercoles son un día extraño ya que no hay mucho tiempo que dedicarle al proyecto, he decidido dedicar la hora a la implementación de funcionalidades en unity.
+
+Septimo día del proyecto:
 Cuando empece con esta idea pense que todo iba a ser mucho más rápido, de cualquier modo, he trabajado con la herencia de unity por primera vez, y debo decir que me ha resultado de lo más útil, tanto de hecho, que seguiré con el desarrollo del juego más alla del prototypo entregable que entregare.
 Este prototipo constará con principio y final, y las reglas serán facilmente visibles al principio, por lo que únicamente nos moveremos por unos pocos pasillos. Mi plan es ampliar el juego lo máximo posible en base a mis capacidades.

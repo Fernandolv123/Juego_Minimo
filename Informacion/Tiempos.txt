@@ -15,5 +15,8 @@ he decidido continuar con las issues a las 19:40 del 23/01/2024
 He terminado por hoy con las issues a las 20:20 y he decidido continuar con unity.
 Tras terminar algunas funcionalidades, he terminado el dia de hoy a las 21:45
 
-Dia 6 del proyecto, he empezado a las 19:40, mi objetivo es dejar listas todas las funcionalidades del juego hoy
+Dia 6 del proyecto:
+He decidido dedicar el dia del 24/01/2024 a trabajar con únity, empezando a las 20:15 y terminando a las 21:05
+
+Dia 7 del proyecto, he empezado a las 19:40, mi objetivo es dejar listas todas las funcionalidades del juego hoy
 A las 21:30 del 25/01/2024 he decidido cesar el trabajo en unity teniendo ya terminados 2 niveles, dedicaré este tiempo restante a comentar y revisar el código as´´i como una mejor implementación de las issues en git hub antes de realizar un nuevo commit
