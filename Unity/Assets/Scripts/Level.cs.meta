@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 65dbceca2fd703941ae3fa7ebf14c04d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - chaseAudio: {fileID: 8300000, guid: 7ee840c19daad0847ba474987c8d7d27, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
