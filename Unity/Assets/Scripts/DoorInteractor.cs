@@ -38,7 +38,7 @@ public class DoorInteractor : MonoBehaviour
         if (other.gameObject.CompareTag("Finish")){
             nextLevel = true;
             doorInitializer.enabled = true;
-        } else if (other.gameObject.CompareTag("FakeWall")){
+        } else if (other.gameObject.CompareTag("FakeDoor")){
             
         }
     }
