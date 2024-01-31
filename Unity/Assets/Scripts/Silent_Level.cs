@@ -13,9 +13,10 @@ public class Silent_Level : Level
     // Update is called once per frame
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
         if (base.IsActive()){
             GameManager.instance.ManagerAudioSource().Pause();
+            
         }
     }
 }

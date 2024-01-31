@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private int level;
     private int debug = 0;
     public bool die = false;
     public GameObject playerPrefab;
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void NextLevel(){
+        //level ++;
         //debemos guardar una referencia al pasillo anterior para desactivarlo y que no presente problemas
         if (debug ==1){
             levelSelector[0].GetComponent<Level>().DeActivate();

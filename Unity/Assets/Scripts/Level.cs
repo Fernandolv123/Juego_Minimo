@@ -24,7 +24,7 @@ public class Level : MonoBehaviour
     {
         if (active){
             //Debug.Log("Estoy Activo"); 21:05
-                if (Time.time > timer+10){
+                if (Time.time > timer+30){
                     Debug.Log("Moriste");
                     if (!audioWasPlayed){
                         Debug.Log("Ha entrado correctamente");

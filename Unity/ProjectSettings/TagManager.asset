@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - SoundController
+  - DoorController
+  - FakeDoor
   layers:
   - Default
   - TransparentFX
