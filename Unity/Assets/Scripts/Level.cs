@@ -9,7 +9,7 @@ public class Level : MonoBehaviour
     private bool audioWasPlayed;
 
     public AudioClip chaseAudio;
-    private AudioSource audio;
+    public AudioSource audio;
     // Start is called before the first frame update
     protected virtual void Start()
     {

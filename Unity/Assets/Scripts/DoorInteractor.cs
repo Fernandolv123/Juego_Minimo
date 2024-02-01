@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DoorInteractor : MonoBehaviour
 {
     private bool nextLevel = false;
+
     private Text doorInitializer;
 
     /// <summary>
@@ -19,12 +20,13 @@ public class DoorInteractor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //doorInitializer.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("||||"+doorInitializer.name);
         if (Input.GetKeyDown(KeyCode.E)){
             //poner canvas
             if (nextLevel){
@@ -36,6 +38,7 @@ public class DoorInteractor : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if (other.gameObject.CompareTag("Finish")){
+            Debug.Log("Entra");
             nextLevel = true;
             doorInitializer.enabled = true;
         } else if (other.gameObject.CompareTag("FakeDoor")){
