@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Alucination : MonoBehaviour
 {
+    private Animator animator;
+
+    void Awake() {
+        animator = GetComponent<Animator>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,7 @@ public class Alucination : MonoBehaviour
         }
         
         if (other.gameObject.tag=="Player"){
+            animator.SetBool("Attack",true);
             Debug.Log("Enter");
             GameManager.instance.die = true;
         }

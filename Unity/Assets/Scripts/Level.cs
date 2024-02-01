@@ -16,7 +16,7 @@ public class Level : MonoBehaviour
         audioWasPlayed= false;
         audio = GameObject.FindGameObjectWithTag("SoundController").GetComponent<AudioSource>();
         chaseAudio = Resources.Load<AudioClip>("Audio/Hit_stress");
-        Debug.Log(chaseAudio);
+        //Debug.Log(chaseAudio);
     }
 
     // Update is called once per frame
@@ -25,9 +25,9 @@ public class Level : MonoBehaviour
         if (active){
             //Debug.Log("Estoy Activo"); 21:05
                 if (Time.time > timer+30){
-                    Debug.Log("Moriste");
+                    //Debug.Log("Moriste");
                     if (!audioWasPlayed){
-                        Debug.Log("Ha entrado correctamente");
+                        //Debug.Log("Ha entrado correctamente");
                         audio.PlayOneShot(chaseAudio);
                         audioWasPlayed = true;
                     }

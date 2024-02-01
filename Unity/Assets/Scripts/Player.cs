@@ -7,10 +7,12 @@ public class Player : MonoBehaviour
 {
     public float speed = 1f;
     public List<AudioClip> footsteps;
+    public GameObject camera;
     
     private AudioSource audio;
     private Rigidbody rb;
     private bool moving = false;
+    private bool running =false;
     private bool croaching = false;
     private int position = 1;
     private bool canMove = true;
@@ -42,6 +44,7 @@ public class Player : MonoBehaviour
                 transform.position += Vector3.forward*(speed/2) * Time.deltaTime * position;
             } else if (Input.GetKey(KeyCode.LeftShift)){
                 transform.position += Vector3.forward*(speed*2) * Time.deltaTime * position;
+                running = true;
                 moving=true;
                 return;
             }else {
@@ -50,6 +53,7 @@ public class Player : MonoBehaviour
             moving=true;
             
         }else {
+            running = false;
             moving=false;
         }
 
@@ -68,7 +72,7 @@ public class Player : MonoBehaviour
     IEnumerator Turning(){
         int time =0;
         while(time < 45){
-        transform.Rotate( 0, 4, 0 * Time.deltaTime );
+        transform.Rotate( 0, 4, 0 * Time.deltaTime);
         time++;
         yield return new WaitForSeconds(0.01f);
         }
@@ -91,14 +95,26 @@ public class Player : MonoBehaviour
     IEnumerator Footsteps(){
         while(true){
             if (moving && !croaching){
-                audio.PlayOneShot(footsteps[Random.Range(0,footsteps.Count)]);
-                yield return new WaitForSeconds(1f);
+                if (running){
+                    audio.PlayOneShot(footsteps[Random.Range(0,footsteps.Count)]);
+                    GameManager.instance.PlayerChangeState(running,moving);
+                    yield return new WaitForSeconds(0.5f);
+                } else {
+                    audio.PlayOneShot(footsteps[Random.Range(0,footsteps.Count)]);
+                    GameManager.instance.PlayerChangeState(running,moving);
+                    yield return new WaitForSeconds(1f);
+                }
             }
+            GameManager.instance.PlayerChangeState(false,false);
             yield return null;
         }
     }
 
     public void ResetPosition(){
         position = 1;
+    }
+
+    public void Die(){
+        camera.GetComponent<Animator>().enabled = true;
     }
 }

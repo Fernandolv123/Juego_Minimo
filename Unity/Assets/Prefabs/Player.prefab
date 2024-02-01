@@ -105,6 +105,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 865ab0893404bb44dbb5922f5c656eb6, type: 3}
   - {fileID: 8300000, guid: fca56c1f5ff920847a83fcf7d1b66dd7, type: 3}
   - {fileID: 8300000, guid: 4d19440128b744b4c8fb200b66089935, type: 3}
+  camera: {fileID: 3965147012516478351}
 --- !u!82 &1829155560251916254
 AudioSource:
   m_ObjectHideFlags: 0
@@ -212,6 +213,7 @@ GameObject:
   - component: {fileID: 1255380067034619001}
   - component: {fileID: 503712583002610745}
   - component: {fileID: 1968786404128213066}
+  - component: {fileID: 2623789762773522979}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -228,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 3965147012516478351}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 0.82, z: 0.132}
+  m_LocalPosition: {x: 0.04, y: 0.706, z: 0.308}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,6 +295,27 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3965147012516478351}
   m_Enabled: 1
+--- !u!95 &2623789762773522979
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3965147012516478351}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83306a391d90cb2498d24c573769fa1f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6446767493840491641
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513545749056188774}
   - component: {fileID: 2977482466222767048}
+  - component: {fileID: 7675534354037024136}
   m_Layer: 0
   m_Name: DoorInteractor
   m_TagString: Untagged
@@ -346,6 +370,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7675534354037024136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446767493840491641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9396086b3a64342880820a3ac5831e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6549948377703918121
 GameObject:
   m_ObjectHideFlags: 0
