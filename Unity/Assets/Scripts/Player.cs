@@ -116,5 +116,6 @@ public class Player : MonoBehaviour
 
     public void Die(){
         camera.GetComponent<Animator>().enabled = true;
+        //cambiar el alpha hijo de la camara para hacer un fade a rojo
     }
 }

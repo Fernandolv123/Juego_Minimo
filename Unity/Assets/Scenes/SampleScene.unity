@@ -2909,7 +2909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.26
+      value: -13.64
       objectReference: {fileID: 0}
     - target: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8212,13 +8212,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283763708}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.598, y: -9.116, z: -2.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2058153749}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1286894430
 GameObject:
   m_ObjectHideFlags: 0
@@ -9789,7 +9789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.2752113
+      value: -20.68
       objectReference: {fileID: 0}
     - target: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14175,10 +14175,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2977482466222767048, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4055734538994302693, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.63
@@ -14218,10 +14214,6 @@ PrefabInstance:
     - target: {fileID: 4055734538994302693, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446767493840491641, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

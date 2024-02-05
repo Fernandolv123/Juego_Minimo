@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         if(die){
             //Debug.Log("Entra aqui tambien");
             playerPrefab.gameObject.GetComponent<Player>().Die();
-            Destroy(playerPrefab.gameObject.GetComponent<Player>());
+            //Destroy(playerPrefab.gameObject.GetComponent<Player>());
         }
         //Debug.Log(Time.time+"//"+(timer+10));
         //if (Time.time > timer+10){

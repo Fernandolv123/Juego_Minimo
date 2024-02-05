@@ -6,8 +6,7 @@ public class Level : MonoBehaviour
 {
     private bool active =false;
     private float timer;
-
-    protected bool audioWasPlayed;
+    private bool audioWasPlayed;
 
     public AudioClip chaseAudio;
     public AudioSource audio;
@@ -26,14 +25,11 @@ public class Level : MonoBehaviour
         if (active){
             //Debug.Log("Estoy Activo"); 21:05
                 if (Time.time > timer+30){
-                    //Debug.Log("Moriste");
-                    if (!audioWasPlayed){
                         //Debug.Log("Ha entrado correctamente");
                         audio.PlayOneShot(chaseAudio);
                         audioWasPlayed = true;
                     }
-                }
-        } else {
+                } else {
            // Debug.Log("Reseteo el timer");
             timer = Time.time;
         }

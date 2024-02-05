@@ -22,7 +22,7 @@ public class Halucination_Level : Level
     {
         base.Update();
         if (base.IsActive()) {
-            frontCanavas.GetComponent<RectTransform>().position = new Vector3(playerPrefab.transform.position.x,playerPrefab.transform.position.y, playerPrefab.transform.position.z+5);
+            frontCanavas.GetComponent<Transform>().position = new Vector3(playerPrefab.transform.position.x,playerPrefab.transform.position.y, playerPrefab.transform.position.z + 5);
             backCanvas.GetComponent<RectTransform>().position = new Vector3(playerPrefab.transform.position.x, playerPrefab.transform.position.y, playerPrefab.transform.position.z - 5);
             //frontCanavas.GetComponent<RectTransform>().position.z = playerPrefab.transform.position.z+5;
         }
