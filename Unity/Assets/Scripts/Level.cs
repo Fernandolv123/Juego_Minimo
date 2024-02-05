@@ -6,7 +6,8 @@ public class Level : MonoBehaviour
 {
     private bool active =false;
     private float timer;
-    private bool audioWasPlayed;
+
+    protected bool audioWasPlayed;
 
     public AudioClip chaseAudio;
     public AudioSource audio;
