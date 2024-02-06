@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private bool taBueno = false;
     private int level;
     private bool playerRunning = false;
     private bool playerWalking = false;
@@ -61,10 +62,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void NextLevel(){ 
+    public void NextLevel(){
         if (newlevel != null) {
             newlevel.GetComponent<Level>().DeActivate();
             levelSelector.Remove(newlevel);
+        }
+        if (levelSelector.Count == 0){
+            Debug.Log("Ganaste");
+            return;
         }
         newlevel = levelSelector[Random.Range(0,levelSelector.Count)];
         playerPrefab.transform.position = newlevel.transform.Find("PlayerSpawner").transform.position;

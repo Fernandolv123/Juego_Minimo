@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public float speed = 1f;
     public List<AudioClip> footsteps;
     public GameObject camera;
+    public Image redImage;
+    public Text gameOverText;
     
     private AudioSource audio;
     private Rigidbody rb;
@@ -28,6 +31,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.instance.die){
+
+        
         if (Input.GetKeyDown(KeyCode.LeftControl)){
             StartCoroutine("Croaching",new Vector3(1,0.5f,1));
             croaching = true;
@@ -66,6 +72,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Q)){
             //Pestañeo
+        }
         }
     }
 
@@ -115,7 +122,36 @@ public class Player : MonoBehaviour
     }
 
     public void Die(){
-        camera.GetComponent<Animator>().enabled = true;
+        if (!camera.GetComponent<Animator>().enabled){
+            camera.GetComponent<Animator>().enabled = true;
+            StartCoroutine("FadeIn");
+            Invoke("SpawnText",1f);
+        }
         //cambiar el alpha hijo de la camara para hacer un fade a rojo
+    }
+    public void SpawnText(){
+        gameOverText.enabled = true;
+        StartCoroutine("BiggerText");
+
+        //StopCoroutine("FadeIn");
+    }
+
+    IEnumerator FadeIn()
+    {
+        for (float i = 0; i <= 1f; i += Time.deltaTime/3f)
+        {
+            Debug.Log("Valor alpha: "+i);
+            if (i < 1){
+                redImage.color = new Color(redImage.color.r, redImage.color.g, redImage.color.b, i);
+            }
+            yield return null;
+        }
+    }
+
+    IEnumerator BiggerText() {
+        for (int i = 0; i <100; i+=1 ){
+            gameOverText.fontSize = i;
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 }

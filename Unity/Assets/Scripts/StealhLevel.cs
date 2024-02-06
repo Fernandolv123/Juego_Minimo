@@ -5,7 +5,7 @@ using UnityEngine;
 public class StealhLevel : Level
 {
     //ponemos un tiempo en el que no moriremos
-    private float timer;
+    private float lelvelTimer;
     private bool spawned = false;
     private Animator[] mutantEnemies;
 
@@ -21,14 +21,15 @@ public class StealhLevel : Level
     // Update is called once per frame
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
         if (base.IsActive()){
-            if(true){
+            if(Time.time > lelvelTimer+2.5){
                 //Tenemos que poner algun tiempo de margen para no morir instantaneamente
                 if (GameManager.instance.PlayerWalking()){
                     if (!spawned) {
                         foreach(Animator enemy in mutantEnemies){
                             enemy.SetBool("Awake",true);
+                            enemy.GetComponent<Mutant_Rotate>().LookAtPlayer(true);
                         }
                         spawned = true;
                         Instantiate(mutantPrefab,mutantSpawner.transform.position,mutantSpawner.transform.rotation);
@@ -36,6 +37,8 @@ public class StealhLevel : Level
                     Debug.Log("Moriste");
                 }
             }
+        } else {
+            lelvelTimer = Time.time;
         }
     }
 }

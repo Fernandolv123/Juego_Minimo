@@ -8,6 +8,8 @@ TagManager:
   - DoorController
   - FakeDoor
   - MutantEnemies
+  - Enemies
+  - BackCollider
   layers:
   - Default
   - TransparentFX

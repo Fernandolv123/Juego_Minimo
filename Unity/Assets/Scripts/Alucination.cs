@@ -5,9 +5,12 @@ using UnityEngine;
 public class Alucination : MonoBehaviour
 {
     private Animator animator;
+    private bool entered = false;
+    private GameObject player;
 
     void Awake() {
         animator = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,15 @@ public class Alucination : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        
+        if (other.gameObject.tag == "BackCollider"){
+            Debug.Log(other+"||"+player);
+            if (!entered){
+                player.GetComponent<Player>().StartCoroutine("Turning");
+                player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                entered = true;
+            }
+        }
+
         if (other.gameObject.name=="ZombieKiller"){
             Destroy(gameObject);
         }
@@ -32,8 +43,5 @@ public class Alucination : MonoBehaviour
             Debug.Log("Enter");
             GameManager.instance.die = true;
         }
-    }
-    void OnCollisionEnter(Collision other){
-
     }
 }
