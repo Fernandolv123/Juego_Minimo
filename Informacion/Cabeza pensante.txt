@@ -32,3 +32,6 @@ El final del tiemp ose va acercando y si bien estoy cerca de tener un prototypo 
 
 Octavo dia del proyecto:
 He implementado la mayoría de las funcionalidades faltantes restantes del proyecto, si bien el proyecto final no es lo que tenia en mente. la mayoria de las funcionalidades ya estan listas, debería terminar de pulir el proyecto en las siguientes 2 horas, seguire escribiendo
+
+Noveno dia del proyecto:
+He dedicado el dia a terminar cualquier cosa restante relevante al gameplay, contando ahora con pantalla de gameover, debo añadir una pantalla de victoria y el juego estará completado
