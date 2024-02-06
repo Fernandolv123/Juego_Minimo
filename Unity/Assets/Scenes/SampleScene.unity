@@ -653,11 +653,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89709924}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &102775462 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
-  m_PrefabInstance: {fileID: 813724228}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &126972048
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,7 +4933,7 @@ GameObject:
   - component: {fileID: 580608447}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: MutantEnemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4956,8 +4951,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1066686647}
-  - {fileID: 102775462}
+  - {fileID: 1606440514}
+  - {fileID: 814110332}
   - {fileID: 315359978}
   - {fileID: 856625663}
   - {fileID: 759306536}
@@ -6312,6 +6307,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
+--- !u!4 &814110332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
+  m_PrefabInstance: {fileID: 813724228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &833736502
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,11 +7598,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
   m_PrefabInstance: {fileID: 17482778}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1066686647 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
-  m_PrefabInstance: {fileID: 1606840954}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1100794996 stripped
 Transform:
@@ -10215,6 +10210,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602592790}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1606440514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 402488, guid: 1d96687606641d8448ec351d83deb5a3, type: 3}
+  m_PrefabInstance: {fileID: 1606840954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1606840954
 PrefabInstance:
   m_ObjectHideFlags: 0
