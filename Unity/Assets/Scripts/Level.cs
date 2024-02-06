@@ -26,8 +26,10 @@ public class Level : MonoBehaviour
             //Debug.Log("Estoy Activo"); 21:05
                 if (Time.time > timer+30){
                         //Debug.Log("Ha entrado correctamente");
+                        if (!audioWasPlayed){
                         audio.PlayOneShot(chaseAudio);
                         audioWasPlayed = true;
+                        }
                     }
                 } else {
            // Debug.Log("Reseteo el timer");
