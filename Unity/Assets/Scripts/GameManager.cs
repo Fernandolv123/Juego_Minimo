@@ -14,14 +14,18 @@ public class GameManager : MonoBehaviour
     public List<GameObject> levelSelector;
     public List<AudioClip> ambientalAudio;
     public List<AudioClip> noiseAudioClip;
-    public AudioClip chaseAudio;
+    //public AudioClip chaseAudio;
+    public AudioClip openDoor;
+    public AudioClip closeDoor;
     public static GameManager instance;
     private AudioSource audio;
+    private AudioSource audioController;
     private float timer;
 
     private GameObject newlevel;
 
     void Awake() {
+        audioController = GameObject.FindGameObjectWithTag("SoundController").GetComponent<AudioSource>();
         instance = this;
         audio = GetComponent<AudioSource>();
     }
@@ -71,6 +75,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("Ganaste");
             return;
         }
+        audioController.PlayOneShot(openDoor);
+        Invoke("CloseDoor",0.4f);
         newlevel = levelSelector[Random.Range(0,levelSelector.Count)];
         playerPrefab.transform.position = newlevel.transform.Find("PlayerSpawner").transform.position;
         playerPrefab.transform.rotation = newlevel.transform.Find("PlayerSpawner").transform.rotation;
@@ -98,6 +104,10 @@ public class GameManager : MonoBehaviour
 
         //Probar funcionalidad de esto
         audio.Play();
+    }
+
+    public void CloseDoor(){
+        audioController.PlayOneShot(closeDoor);
     }
 
     public AudioSource ManagerAudioSource(){
