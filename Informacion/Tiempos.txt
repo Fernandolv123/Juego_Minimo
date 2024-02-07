@@ -28,3 +28,6 @@ Dia 9 del proyecto:
 Empezando a las 18:15 el 06/02/2024 mi objetivo es dejar el proyecto listo hoy
 A las 20:00 he bajado al descanso
 he retornado a mi puesto a las 21:00 para seguir con unity, a las 21:45 he dejado unity para subir todo a git hub, solo me falta una pantalla de victoria
+
+Día 10 del proyecto:
+Empezando el 07/02/2024 a las 20:15, he continuado en unity realizando las interfaces de usuario para poder dar paso al siguiente punto terminando a las 21:05

@@ -35,3 +35,6 @@ He implementado la mayoría de las funcionalidades faltantes restantes del proyec
 
 Noveno dia del proyecto:
 He dedicado el dia a terminar cualquier cosa restante relevante al gameplay, contando ahora con pantalla de gameover, debo añadir una pantalla de victoria y el juego estará completado
+
+Decimo dia del proyecto:
+Último dia, mi proyecto minimo viable esta terminado, ahora entramos en el plan de mejora con el objetivo de añadir cuanto mas contenido mejor para convertirlo en un juego real
