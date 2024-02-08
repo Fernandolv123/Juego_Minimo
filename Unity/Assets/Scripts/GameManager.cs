@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,14 +16,17 @@ public class GameManager : MonoBehaviour
     public List<GameObject> levelSelector;
     public List<AudioClip> ambientalAudio;
     public List<AudioClip> noiseAudioClip;
-    //public AudioClip chaseAudio;
     public AudioClip openDoor;
     public AudioClip closeDoor;
     public static GameManager instance;
     private AudioSource audio;
     private AudioSource audioController;
-    private float timer;
-
+    private float levelsWon=0;
+    [Header("Related to UI")]
+    [SerializeField]
+    private GameObject rulesButton;
+    [SerializeField]
+    private Text rulesText;
     private GameObject newlevel;
 
     void Awake() {
@@ -40,6 +45,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (levelsWon == 0){
+            rulesButton.active = true;
+        } else {
+            rulesButton.active = false;
+            rulesText.enabled = false;
+        }
         foreach (GameObject go in levelSelector){
             //Debug.Log(go.GetComponent<Level>().IsActive());
         }
@@ -67,12 +78,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void NextLevel(){
+        levelsWon++;
         if (newlevel != null) {
             newlevel.GetComponent<Level>().DeActivate();
             levelSelector.Remove(newlevel);
         }
         if (levelSelector.Count == 0){
-            Debug.Log("Ganaste");
+            SceneManager.LoadScene("Win_Scene");
             return;
         }
         audioController.PlayOneShot(openDoor);
@@ -124,5 +136,16 @@ public class GameManager : MonoBehaviour
     public void PlayerChangeState(bool running,bool walking){
         playerRunning = running;
         playerWalking = walking;
+    }
+
+    public void OnButtonClick(){
+        if (!rulesText.enabled){
+            rulesButton.GetComponentInChildren<Text>().text = "Back";
+            rulesText.enabled = true;
+        } else {
+            rulesButton.GetComponentInChildren<Text>().text = "Rules";
+            rulesText.enabled = false;
+        }
+        
     }
 }
