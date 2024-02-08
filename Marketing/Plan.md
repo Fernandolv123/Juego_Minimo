@@ -1,37 +1,37 @@
 # Marketing
-Este documento contendrá las ideas así como el plan de marketing que seguiré hasta la publicación del juego.
-Cabe destacar que este plan de marketing estará principalmente dirigido a jovenes o futuros desarrolladores que puedan encontrar utilidad en el contenido, y los vídeos serán realizados con esto en mente.
+Este documento contendrá las ideas así como el plan de marketing que seguiré hasta la publicación del juego.  
+Cabe destacar que este plan de marketing estará principalmente dirigido a jovenes o futuros desarrolladores que puedan encontrar utilidad en el contenido, y los vídeos serán realizados con esto en mente. 
 
 ## Creación de cuentas de redes sociales para publicidad
 El objetivo principal es dar visibilidad a mi producto, por esto mismo el primer movimiento será la creación de un correo electrónico relacionado con el nombre del juego y crear con este distintas cuentas en:
-    - YT
-    - Tiktok
-    - Instagram
+ - YT
+ - Tiktok
+ - Instagram
 La razón de estas tres es simple, ya que todas soportan el formato de 'shorts', por lo que haciendo un solo video, puedo lograr una mayor visibilidad al tener el contenido disponible en distintas plataformas.
 
 ## Elaboración de videos cortos
 
 Estos serán videos en formato vertical con una duración máxima de 60 segundos, estos videos serán subidos con el movil para lograr una máxima visibilidad
 Existirán dos tipos de video en las redes creadas anteriormente:
-    - Videos explicativos: El objetivo de estos videos es mostrar resumidamente las fases de desarrollo por las que he pasado durante el proceso de creación del juego, el objetivo es tener una cantidad moderada de estos intentando tratar todos los temas considerados relevantes como:
-      - Elección de motor de desarrollo
-      - creación del gdd
-      - Assets y Asset Store
-      - Git y github
+ - Videos explicativos: El objetivo de estos videos es mostrar resumidamente las fases de desarrollo por las que he pasado durante el proceso de creación del juego, el objetivo es tener una cantidad moderada de estos intentando tratar todos los temas considerados relevantes como:
+    - Elección de motor de desarrollo
+   - creación del gdd
+    - Assets y Asset Store
+   - Git y github
         - issues
         - ramas y pull requests
         - tags
         - versionado
-      - Trabajo en Unity
+    - Trabajo en Unity
         - Componentes y modificadores
         - nociones generales de programacion
         - programacion de scripts en C#
         - programación de scripts en unity
         - Muestra de algunos niveles
-      - Plan Marketing
-      - Vision general final
-      - ...
-    - Videos promocionales: estos videos serán videos cortos del juego a modo de pequeños teasers, a parte de videos también se podrán subir imágenes 
+   - Plan Marketing
+    - Vision general final
+   - ...
+- Videos promocionales: estos videos serán videos cortos del juego a modo de pequeños teasers, a parte de videos también se podrán subir imágenes 
 
 Cada día debe haber un vídeo nuevo listo para subir desde el inicio del plan de marketing hasta la publicación en itch.io
 
