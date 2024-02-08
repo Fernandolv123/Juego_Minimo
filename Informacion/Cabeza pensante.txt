@@ -28,7 +28,7 @@ Cuando empece con esta idea pense que todo iba a ser mucho más rápido, de cualqu
 Este prototipo constará con principio y final, y las reglas serán facilmente visibles al principio, por lo que únicamente nos moveremos por unos pocos pasillos. Mi plan es ampliar el juego lo máximo posible en base a mis capacidades.
 
 Septimo dia del proyecto:
-El final del tiemp ose va acercando y si bien estoy cerca de tener un prototypo jugable, muchas de las funcionalidades me han quedad a medio hacer, intentaré investigar alguna de estas.
+El final del tiempo se va acercando y si bien estoy cerca de tener un prototypo jugable, muchas de las funcionalidades me han quedad a medio hacer, intentaré investigar alguna de estas.
 
 Octavo dia del proyecto:
 He implementado la mayoría de las funcionalidades faltantes restantes del proyecto, si bien el proyecto final no es lo que tenia en mente. la mayoria de las funcionalidades ya estan listas, debería terminar de pulir el proyecto en las siguientes 2 horas, seguire escribiendo
@@ -38,3 +38,6 @@ He dedicado el dia a terminar cualquier cosa restante relevante al gameplay, con
 
 Decimo dia del proyecto:
 Último dia, mi proyecto minimo viable esta terminado, ahora entramos en el plan de mejora con el objetivo de añadir cuanto mas contenido mejor para convertirlo en un juego real
+
+Onceavo dia del proyecto:
+Hoy he dedicado el dia a aclarar mi plan de marketing, escribirlo y luego he dedicado tiempo a formatear todo el repositorio.

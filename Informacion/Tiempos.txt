@@ -8,7 +8,7 @@ A las 19:35 del 18/1/2024 he decidido empezar a implementar las funcionalidades 
 A las 21:55 he terminado mi desarrollo en unity por este dia
 
 Día 4 del proyecto 
-A las 21:00 he empezado a realizar las issues para llevar un desarrollo más organizado de mi juego
+A las 21:00 el 19/1/24 he empezado a realizar las issues para llevar un desarrollo más organizado de mi juego
 
 Día 5 del proyecto:
 he decidido continuar con las issues a las 19:40 del 23/01/2024
@@ -19,10 +19,10 @@ Dia 6 del proyecto:
 He decidido dedicar el dia del 24/01/2024 a trabajar con únity, empezando a las 20:15 y terminando a las 21:05
 
 Dia 7 del proyecto, he empezado a las 19:40, mi objetivo es dejar listas todas las funcionalidades del juego hoy
-A las 21:30 del 25/01/2024 he decidido cesar el trabajo en unity teniendo ya terminados 2 niveles, dedicaré este tiempo restante a comentar y revisar el código asi como una mejor implementación de las issues en git hub antes de realizar un nuevo commit
+A las 21:40 del 25/01/2024 he decidido cesar el trabajo en unity teniendo ya terminados 2 niveles, dedicaré este tiempo restante a comentar y revisar el código asi como una mejor implementación de las issues en git hub antes de realizar un nuevo commit
 
 Dia 8 del proyecto:
-A las 19:40 he vuelto a unity, mi objetivo es terminar por completo todo lo relacionado con unity hoy, he terminado a las 21:50 con casi todo terminado, solo me faltaría implementar Pantallas de inicio y pulir algunos efectos visuales y sonoros
+A las 19:40 del 26/1/24 he vuelto a unity, mi objetivo es terminar por completo todo lo relacionado con unity hoy, he terminado a las 21:50 con casi todo terminado, solo me faltaría implementar Pantallas de inicio y pulir algunos efectos visuales y sonoros
 
 Dia 9 del proyecto:
 Empezando a las 18:15 el 06/02/2024 mi objetivo es dejar el proyecto listo hoy
@@ -31,3 +31,6 @@ he retornado a mi puesto a las 21:00 para seguir con unity, a las 21:45 he dejad
 
 Día 10 del proyecto:
 Empezando el 07/02/2024 a las 20:15, he continuado en unity realizando las interfaces de usuario para poder dar paso al siguiente punto terminando a las 21:05
+
+Dia 11 del proyecto:
+Ya con el proyecto unity practicamente terminado (a excepcion de algun detalle), he decidido empezar con a elaboracion de mi plan de marketing, soi bien la clase ha empezado a las 19:20, he estado ultimando detalles con mi profesor por lo que realmente he empezado a elaborar el documento a las 20:30
