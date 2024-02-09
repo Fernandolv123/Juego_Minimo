@@ -138,9 +138,9 @@ public class Player : MonoBehaviour
 
     IEnumerator FadeIn()
     {
+        redImage.enabled = true;
         for (float i = 0; i <= 1f; i += Time.deltaTime/3f)
         {
-            Debug.Log("Valor alpha: "+i);
             if (i < 1){
                 redImage.color = new Color(redImage.color.r, redImage.color.g, redImage.color.b, i);
             }

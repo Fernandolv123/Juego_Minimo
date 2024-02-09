@@ -4009,10 +4009,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "If you stop hearing anything, rus as fast as you can until next floor\n\nif
-    you se some... strange creatures lying down, just croach and you'll be fine,
-    don't panic\n\nAt some point you might hear some strange noise (aun por a\xF1adir
-    xd), if that happens, stay still, you wont get hurt if you do so"
+  m_Text: 'If you stop hearing anything, run as fast as you can until next floor
+
+
+    if
+    you se some... strange creatures lying down, just croach and you''ll be fine,
+    don''t panic
+
+
+    At some point you might hear a girl crying, if that happens,
+    stay still, you wont get hurt if you do so'
 --- !u!222 &331890967
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16625,6 +16631,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1712587216999105384, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2130292463175354337, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -16667,6 +16677,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4055734538994302693, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581415298728935073, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908819570364840010, guid: 31a1dd0d04d8ace479be1ee5c277c6b9, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -55,12 +55,13 @@ public class Alucination : MonoBehaviour
 
     IEnumerator FadeIn(){
         Debug.Log("{FadeIn} Entra");
-        //fadeOutImage.color = new Color(0,0,0,255);
+        fadeOutImage.enabled = true;
         for (float i = 1; i >= 0; i -= Time.deltaTime*2)
         {
             fadeOutImage.color = new Color(fadeOutImage.color.r, fadeOutImage.color.g, fadeOutImage.color.b, i);
             yield return null;
         }
+        fadeOutImage.enabled = false;
         Destroy(gameObject);
         yield return null; 
         
