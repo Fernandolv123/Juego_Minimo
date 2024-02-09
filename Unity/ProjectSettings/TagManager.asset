@@ -10,6 +10,7 @@ TagManager:
   - MutantEnemies
   - Enemies
   - BackCollider
+  - FadeInImage
   layers:
   - Default
   - TransparentFX

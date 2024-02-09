@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Alucination : MonoBehaviour
 {
     private Animator animator;
     private bool entered = false;
     private GameObject player;
+    private AudioSource audio;
+    public AudioClip audioZombieStop;
+    private Image fadeOutImage;
 
     void Awake() {
+        fadeOutImage = GameObject.FindGameObjectWithTag("FadeInImage").GetComponent<Image>();
+        audio = GameObject.FindGameObjectWithTag("SoundController").GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -35,7 +41,9 @@ public class Alucination : MonoBehaviour
         }
 
         if (other.gameObject.name=="ZombieKiller"){
-            Destroy(gameObject);
+            audio.PlayOneShot(audioZombieStop);
+            StartCoroutine("FadeIn");
+            gameObject.transform.position = new Vector3(-1000,1000,1000);
         }
         
         if (other.gameObject.tag=="Player"){
@@ -43,5 +51,18 @@ public class Alucination : MonoBehaviour
             Debug.Log("Enter");
             GameManager.instance.die = true;
         }
+    }
+
+    IEnumerator FadeIn(){
+        Debug.Log("{FadeIn} Entra");
+        //fadeOutImage.color = new Color(0,0,0,255);
+        for (float i = 1; i >= 0; i -= Time.deltaTime*2)
+        {
+            fadeOutImage.color = new Color(fadeOutImage.color.r, fadeOutImage.color.g, fadeOutImage.color.b, i);
+            yield return null;
+        }
+        Destroy(gameObject);
+        yield return null; 
+        
     }
 }
