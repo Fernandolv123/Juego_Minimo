@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public GameObject camera;
     public Image redImage;
     public Text gameOverText;
-    
+    public AudioClip stab;
     private AudioSource audio;
     private Rigidbody rb;
     private bool moving = false;
@@ -125,6 +125,7 @@ public class Player : MonoBehaviour
         if (!camera.GetComponent<Animator>().enabled){
             camera.GetComponent<Animator>().enabled = true;
             StartCoroutine("FadeIn");
+            StartCoroutine("StabController");
             Invoke("SpawnText",1f);
         }
         //cambiar el alpha hijo de la camara para hacer un fade a rojo
@@ -132,8 +133,19 @@ public class Player : MonoBehaviour
     public void SpawnText(){
         gameOverText.enabled = true;
         StartCoroutine("BiggerText");
-
+//        audio.clip = stab;
+//        audio.loop = true;
+//        audio.Play();
         //StopCoroutine("FadeIn");
+    }
+
+    IEnumerator StabController() {
+        while (GameManager.instance.die){
+            audio.PlayOneShot(stab);
+            yield return new WaitForSeconds(0.75f);
+        }
+
+        
     }
 
     IEnumerator FadeIn()

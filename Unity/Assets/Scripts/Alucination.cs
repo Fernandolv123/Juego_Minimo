@@ -9,10 +9,12 @@ public class Alucination : MonoBehaviour
     private bool entered = false;
     private GameObject player;
     private AudioSource audio;
+    private AudioSource zombieAudio;
     public AudioClip audioZombieStop;
     private Image fadeOutImage;
 
     void Awake() {
+        zombieAudio = GetComponent<AudioSource>();
         fadeOutImage = GameObject.FindGameObjectWithTag("FadeInImage").GetComponent<Image>();
         audio = GameObject.FindGameObjectWithTag("SoundController").GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
@@ -50,6 +52,7 @@ public class Alucination : MonoBehaviour
             animator.SetBool("Attack",true);
             Debug.Log("Enter");
             GameManager.instance.die = true;
+            zombieAudio.Stop();
         }
     }
 
