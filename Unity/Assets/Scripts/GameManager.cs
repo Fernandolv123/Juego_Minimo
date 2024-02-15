@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject rulesButton;
     [SerializeField]
+    private List<AudioClip> audiosPaper;
+    [SerializeField]
     private Text rulesText;
     private GameObject newlevel;
 
@@ -51,19 +53,9 @@ public class GameManager : MonoBehaviour
             rulesButton.active = false;
             rulesText.enabled = false;
         }
-        foreach (GameObject go in levelSelector){
-            //Debug.Log(go.GetComponent<Level>().IsActive());
-        }
         if(die){
-            //Debug.Log("Entra aqui tambien");
             playerPrefab.gameObject.GetComponent<Player>().Die();
-            //Destroy(playerPrefab.gameObject.GetComponent<Player>());
         }
-        //Debug.Log(Time.time+"//"+(timer+10));
-        //if (Time.time > timer+10){
-            //Debug.Log("entra");
-        //    audio.PlayOneShot(chaseAudio);
-        //}
         
     }
 
@@ -95,26 +87,6 @@ public class GameManager : MonoBehaviour
         playerPrefab.GetComponent<Player>().ResetPosition();
         newlevel.GetComponent<Level>().Activate();
 
-
-        //level ++;
-        //debemos guardar una referencia al pasillo anterior para desactivarlo y que no presente problemas
-                /*if (debug ==1){
-            levelSelector[0].GetComponent<Level>().DeActivate();
-        playerPrefab.transform.position = levelSelector[1].transform.Find("PlayerSpawner").transform.position;
-        playerPrefab.transform.rotation = levelSelector[1].transform.Find("PlayerSpawner").transform.rotation;
-        playerPrefab.GetComponent<Player>().ResetPosition();
-        levelSelector[1].GetComponent<Level>().Activate();
-        } else {
-        playerPrefab.transform.position = levelSelector[0].transform.Find("PlayerSpawner").transform.position;
-        playerPrefab.transform.rotation = levelSelector[0].transform.Find("PlayerSpawner").transform.rotation;
-        playerPrefab.GetComponent<Player>().ResetPosition();
-        //Instantiate(playerPrefab,levelSelector[0].transform.Find("PlayerSpawner").position,Quaternion.identity);
-        //Destroy(GameObject.FindGameObjectWithTag("Player"));
-        levelSelector[0].GetComponent<Level>().Activate();
-        debug ++;
-                }*/
-
-        //Probar funcionalidad de esto
         audio.Play();
     }
 
@@ -138,14 +110,19 @@ public class GameManager : MonoBehaviour
         playerWalking = walking;
     }
 
-    public void OnButtonClick(){
+    public void OnRulesButtonClick(){
         if (!rulesText.enabled){
             rulesButton.GetComponentInChildren<Text>().text = "Back";
             rulesText.enabled = true;
+            audio.PlayOneShot(audiosPaper[0]);
         } else {
             rulesButton.GetComponentInChildren<Text>().text = "Rules";
             rulesText.enabled = false;
+            audio.PlayOneShot(audiosPaper[1]);
         }
         
+    }
+    public void OnGameOverButtonClick(){
+        SceneManager.LoadScene("initial_Scene");
     }
 }

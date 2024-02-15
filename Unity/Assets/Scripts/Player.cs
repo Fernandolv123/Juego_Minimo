@@ -9,8 +9,10 @@ public class Player : MonoBehaviour
     public float speed = 1f;
     public List<AudioClip> footsteps;
     public GameObject camera;
+    [Header("UI")]
     public Image redImage;
     public Text gameOverText;
+    public GameObject gameoverButton;
     public AudioClip stab;
     private AudioSource audio;
     private Rigidbody rb;
@@ -165,5 +167,6 @@ public class Player : MonoBehaviour
             gameOverText.fontSize = i;
             yield return new WaitForSeconds(0.01f);
         }
+        gameoverButton.SetActive(true);
     }
 }
