@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.instance.die){
+        if (!GameManager.instance.die && !GameManager.instance.aboutToDie){
 
         
         if (Input.GetKeyDown(KeyCode.LeftControl)){

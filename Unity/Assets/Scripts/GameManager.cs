@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private bool taBueno = false;
+    public bool aboutToDie = false;
     private int level;
     private bool playerRunning = false;
     private bool playerWalking = false;
@@ -26,9 +26,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject rulesButton;
     [SerializeField]
+    private GameObject buttonRulesText;
+    [SerializeField]
     private List<AudioClip> audiosPaper;
     [SerializeField]
-    private Text rulesText;
+    private GameObject paperRules;
+    [SerializeField]
+    private List<Sprite> rulesButtonSprite;
     private GameObject newlevel;
 
     void Awake() {
@@ -51,7 +55,8 @@ public class GameManager : MonoBehaviour
             rulesButton.active = true;
         } else {
             rulesButton.active = false;
-            rulesText.enabled = false;
+            paperRules.active = false;
+            //rulesText.enabled = false;
         }
         if(die){
             playerPrefab.gameObject.GetComponent<Player>().Die();
@@ -111,16 +116,51 @@ public class GameManager : MonoBehaviour
     }
 
     public void OnRulesButtonClick(){
-        if (!rulesText.enabled){
-            rulesButton.GetComponentInChildren<Text>().text = "Back";
-            rulesText.enabled = true;
-            audio.PlayOneShot(audiosPaper[0]);
+        if (/*!rulesText.enabled*/!paperRules.active){
+            buttonRulesText.GetComponent<Text>().text = "Hide Rules";
+            buttonRulesText.GetComponent<Transform>().localPosition = new Vector3(0,40,0);
+            rulesButton.GetComponent<Image>().sprite = rulesButtonSprite[1];
+            rulesButton.GetComponent<Button>().interactable = false;
+            StartCoroutine("AppearPaper");
+            //rulesText.enabled = true;
         } else {
-            rulesButton.GetComponentInChildren<Text>().text = "Rules";
-            rulesText.enabled = false;
-            audio.PlayOneShot(audiosPaper[1]);
+            buttonRulesText.GetComponent<Text>().text = "Show Rules";
+            buttonRulesText.GetComponent<Transform>().localPosition = new Vector3(0,0,0);
+            rulesButton.GetComponent<Image>().sprite = rulesButtonSprite[0];
+            rulesButton.GetComponent<Button>().interactable = false;
+            //rulesText.enabled = false;
+            StartCoroutine("DisppearPaper");
+
         }
         
+    }
+    IEnumerator AppearPaper() {
+        paperRules.active = true;
+        
+        audio.PlayOneShot(audiosPaper[0]);
+        //Esto provoca errores debido a la posicion en la que se encuentra dentro del canvas por lo que debemos restar esta position a la position máxima
+        for (float i=-1000;i<=-310;i+=32){
+            Debug.Log("valor i: "+i);
+            paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,i,0);
+            yield return new WaitForSeconds(0.001f);
+        }
+        Debug.Log("Entra aqui");
+        paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,-310,0);
+        rulesButton.GetComponent<Button>().interactable = true;
+        yield return null;
+    }
+
+    IEnumerator DisppearPaper() {
+        audio.PlayOneShot(audiosPaper[1]);
+        for (float i=-310;i>=-1000;i-=32){
+            paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,i,0);
+            yield return new WaitForSeconds(0.001f);
+        }
+        paperRules.active = false;
+        Debug.Log("Entra aqui tambien");
+        paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,-1000,0);
+        rulesButton.GetComponent<Button>().interactable = true;
+        yield return null;
     }
     public void OnGameOverButtonClick(){
         SceneManager.LoadScene("initial_Scene");

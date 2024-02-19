@@ -19,6 +19,10 @@ public class Alucination : MonoBehaviour
         audio = GameObject.FindGameObjectWithTag("SoundController").GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
+        Invoke("Die",11f);
+    }
+    public void Die(){
+        Destroy(gameObject);
     }
     // Start is called before the first frame update
     void Start()
@@ -36,6 +40,7 @@ public class Alucination : MonoBehaviour
         if (other.gameObject.tag == "BackCollider"){
             Debug.Log(other+"||"+player);
             if (!entered){
+                GameManager.instance.aboutToDie=true;
                 player.GetComponent<Player>().StartCoroutine("Turning");
                 player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                 entered = true;

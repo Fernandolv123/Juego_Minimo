@@ -26,12 +26,13 @@ public class DoorInteractor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("||||"+doorInitializer.name);
-        if (Input.GetKeyDown(KeyCode.E)){
-            //poner canvas
-            if (nextLevel){
-                GameManager.instance.NextLevel();
-                //Debug.Log("Siguiente nivel");
+        if (!GameManager.instance.aboutToDie && !GameManager.instance.die){
+            if (Input.GetKeyDown(KeyCode.E)){
+                //poner canvas
+                if (nextLevel){
+                    GameManager.instance.NextLevel();
+                    //Debug.Log("Siguiente nivel");
+                }
             }
         }
     }
