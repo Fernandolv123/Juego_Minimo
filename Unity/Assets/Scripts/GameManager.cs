@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
     public void OnRulesButtonClick(){
         if (/*!rulesText.enabled*/!paperRules.active){
             buttonRulesText.GetComponent<Text>().text = "Hide Rules";
-            buttonRulesText.GetComponent<Transform>().localPosition = new Vector3(0,40,0);
+            buttonRulesText.GetComponent<Transform>().localPosition = new Vector3(0,80,0);
             rulesButton.GetComponent<Image>().sprite = rulesButtonSprite[1];
             rulesButton.GetComponent<Button>().interactable = false;
             StartCoroutine("AppearPaper");
