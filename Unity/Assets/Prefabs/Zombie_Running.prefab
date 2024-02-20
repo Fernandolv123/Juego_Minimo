@@ -2769,6 +2769,7 @@ GameObject:
   - component: {fileID: 8827576040930571920}
   - component: {fileID: 2307460128572140068}
   - component: {fileID: 3933405956746525099}
+  - component: {fileID: -6539934416930058509}
   m_Layer: 0
   m_Name: Zombie_Running
   m_TagString: Untagged
@@ -2816,7 +2817,7 @@ Animator:
   m_GameObject: {fileID: 8590062222623792339}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
-  m_Controller: {fileID: 9100000, guid: ba305940127a0b04f8e7ca7bb56695a0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 767cf26c3ad000647adf17557fc00e06, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2929,8 +2930,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 4
-  MaxDistance: 5
+  MinDistance: 8
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -3005,6 +3006,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6539934416930058509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8590062222623792339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101077757562d7e41b0d3adf87a4fb7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dir: -1.4
 --- !u!1 &8672409558200590701
 GameObject:
   m_ObjectHideFlags: 0

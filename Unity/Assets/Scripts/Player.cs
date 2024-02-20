@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && canMove){
             //W go forward
             if (croaching){
-                transform.position += Vector3.forward*(speed/2) * Time.deltaTime * position;
+                transform.position += Vector3.forward*(speed/1.5f) * Time.deltaTime * position;
             } else if (Input.GetKey(KeyCode.LeftShift)){
                 transform.position += Vector3.forward*(speed*2) * Time.deltaTime * position;
                 running = true;
@@ -146,8 +146,6 @@ public class Player : MonoBehaviour
             audio.PlayOneShot(stab);
             yield return new WaitForSeconds(0.75f);
         }
-
-        
     }
 
     IEnumerator FadeIn()
@@ -163,10 +161,12 @@ public class Player : MonoBehaviour
     }
 
     IEnumerator BiggerText() {
-        for (int i = 0; i <100; i+=1 ){
-            gameOverText.fontSize = i;
+        gameoverButton.SetActive(true);
+        for (float i = 0; i <100; i+=1 ){
+            gameOverText.fontSize = (int) i;
+            gameoverButton.GetComponent<RectTransform>().localScale = new Vector3(i/100,i/100,0);
             yield return new WaitForSeconds(0.01f);
         }
-        gameoverButton.SetActive(true);
+        
     }
 }

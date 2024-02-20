@@ -1153,7 +1153,7 @@ Transform:
   m_GameObject: {fileID: 172841128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.598, y: -9.116, z: -2.85}
+  m_LocalPosition: {x: 0.7, y: -9.116, z: -2.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1292,7 +1292,7 @@ Transform:
   m_GameObject: {fileID: 196576875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.009, y: -8.19, z: -25.18}
+  m_LocalPosition: {x: 1.009, y: -8.19, z: -25.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1479,6 +1479,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6424270456704860672, guid: 214b673e61a328f4b97a4c1f1bba63d3, type: 3}
   m_PrefabInstance: {fileID: 1344829673}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &246937129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246937130}
+  - component: {fileID: 246937132}
+  - component: {fileID: 246937131}
+  m_Layer: 5
+  m_Name: Rules_Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &246937130
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246937129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1077825506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: -180}
+  m_SizeDelta: {x: 820, y: 820}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &246937131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246937129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c5f8fc9268dd9f54480fddc951bb2463, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'if you are reading this you messed with the wrong guys, you''re not the
+    first to do so tho.
+
+
+    Anyway, if you want any chances of surviving this...
+    experience i''ll write down some rules you MUST follow, i can''t emphasize enough
+    that those are NOT suggestions.
+
+
+    Good luck and don''t break the rules if
+    you value your life:
+
+
+    If you stop hearing anything, run as fast as you can
+    until next hall
+
+
+    if you se some... strange creatures lying down, just croach
+    and you''ll be fine, don''t panic
+
+
+    At some point you might hear a girl laughing,
+    if that happens, stay still, you wont get hurt if you do so'
+--- !u!222 &246937132
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246937129}
+  m_CullTransparentMesh: 1
 --- !u!1 &249665442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2884,7 @@ Transform:
   m_GameObject: {fileID: 374615711}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.56, y: -9.35, z: -38.06}
+  m_LocalPosition: {x: 0.7, y: -9.35, z: -38.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3527,7 +3628,7 @@ Transform:
   m_GameObject: {fileID: 497683139}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76, y: -9, z: -36.49}
+  m_LocalPosition: {x: 0.7, y: -9, z: -36.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4345,7 +4446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654233063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4386,7 +4487,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c5f8fc9268dd9f54480fddc951bb2463, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -4398,7 +4499,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'If you stop hearing anything, run as fast as you can until next floor
+  m_Text: 'If you stop hearing anything, run as fast as you can until next hall
 
 
     if
@@ -6759,7 +6860,7 @@ Transform:
   m_GameObject: {fileID: 966005414}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.871, y: -8.895, z: -5.34}
+  m_LocalPosition: {x: 0.7, y: -8.895, z: -5.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7238,7 +7339,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d822ece71fcae1e4da61bb1b3dbb699e, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -7289,12 +7390,13 @@ RectTransform:
   m_Children:
   - {fileID: 1701669770}
   - {fileID: 654233063}
+  - {fileID: 246937130}
   m_Father: {fileID: 1394953187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -305.49997}
+  m_SizeDelta: {x: 100, y: -611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1100794996 stripped
 Transform:
@@ -8574,7 +8676,7 @@ Transform:
   m_GameObject: {fileID: 1283763708}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.598, y: -9.116, z: -2.85}
+  m_LocalPosition: {x: 0.7, y: -9.116, z: -2.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9100,7 +9202,7 @@ GameObject:
   - component: {fileID: 1394953185}
   - component: {fileID: 1394953184}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_Rules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9312,8 +9414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ee14b63974d724cabe0424a952da0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseAudio: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!4 &1440062135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6424270456704860672, guid: 214b673e61a328f4b97a4c1f1bba63d3, type: 3}
@@ -12441,7 +12541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 53c0066bc7a842347aa1ed03f0d3fb45, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -13914,7 +14014,7 @@ Transform:
   m_GameObject: {fileID: 2002176247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76, y: -9, z: -36.49}
+  m_LocalPosition: {x: 0.7, y: -9, z: -36.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18657,7 +18757,7 @@ Transform:
   m_GameObject: {fileID: 7243853974335087382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76, y: -9, z: -36.49}
+  m_LocalPosition: {x: 0.7, y: -9, z: -36.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20108,7 +20208,7 @@ Transform:
   m_GameObject: {fileID: 5637570802447383197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76, y: -9, z: -36.49}
+  m_LocalPosition: {x: 0.7, y: -9, z: -36.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

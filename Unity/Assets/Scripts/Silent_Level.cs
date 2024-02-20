@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Silent_Level : Level
 {
-    private float timer;
+    private float silentTimer;
     private bool audioWasPlayedSilent;
     public GameObject zombieRunPrefab;
     public GameObject zombieRunSpawner;
@@ -14,7 +14,7 @@ public class Silent_Level : Level
     {
         base.Start();
         audioWasPlayedSilent = false;
-        timer = Time.time;
+        silentTimer = Time.time;
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class Silent_Level : Level
         //base.Update();
         if (base.IsActive()){
             GameManager.instance.ManagerAudioSource().Pause();
-            if (Time.time > timer + 10){
+            if (Time.time > silentTimer + 4f){
                 if(!audioWasPlayedSilent){
                 audio.PlayOneShot(chaseAudio);
                 Instantiate(zombieRunPrefab,zombieRunSpawner.transform.position,zombieRunSpawner.transform.rotation);
@@ -32,7 +32,7 @@ public class Silent_Level : Level
                 }
             }
         } else {
-            timer = Time.time;
+            silentTimer = Time.time;
         }
     }
 }
