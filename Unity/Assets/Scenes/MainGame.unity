@@ -2057,7 +2057,10 @@ MonoBehaviour:
   die: 0
   playerPrefab: {fileID: 584937797702766247}
   levelSelector:
+  - {fileID: 7706187608109685386}
   - {fileID: 2058153747}
+  - {fileID: 1563454720}
+  - {fileID: 4632544600569086721}
   ambientalAudio:
   - {fileID: 8300000, guid: ee403a3067a0c476dbd3e34a5f69c4a3, type: 3}
   noiseAudioClip:
