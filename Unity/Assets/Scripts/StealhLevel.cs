@@ -23,7 +23,7 @@ public class StealhLevel : Level
     {
         //base.Update();
         if (base.IsActive()){
-            if(Time.time > lelvelTimer+2.5){
+            if(Time.time > lelvelTimer+1.5f){
                 //Tenemos que poner algun tiempo de margen para no morir instantaneamente
                 if (GameManager.instance.PlayerWalking()){
                     if (!spawned) {
@@ -34,7 +34,6 @@ public class StealhLevel : Level
                         spawned = true;
                         Instantiate(mutantPrefab,mutantSpawner.transform.position,mutantSpawner.transform.rotation);
                     }
-                    Debug.Log("Moriste");
                 }
             }
         } else {

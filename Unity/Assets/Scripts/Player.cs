@@ -142,9 +142,14 @@ public class Player : MonoBehaviour
     }
 
     IEnumerator StabController() {
+        int stabs=0;
         while (GameManager.instance.die){
             audio.PlayOneShot(stab);
             yield return new WaitForSeconds(0.75f);
+            if (stabs ==7){
+                break;
+            }
+            stabs++;
         }
     }
 

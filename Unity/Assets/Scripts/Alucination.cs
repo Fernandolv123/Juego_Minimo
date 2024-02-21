@@ -11,6 +11,7 @@ public class Alucination : MonoBehaviour
     private AudioSource audio;
     private AudioSource zombieAudio;
     public AudioClip audioZombieStop;
+    public float timeToDestroy;
     private Image fadeOutImage;
 
     void Awake() {
@@ -19,21 +20,10 @@ public class Alucination : MonoBehaviour
         audio = GameObject.FindGameObjectWithTag("SoundController").GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
-        Invoke("Die",11f);
+        Invoke("Die",timeToDestroy);
     }
     public void Die(){
         Destroy(gameObject);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnTriggerEnter(Collider other){

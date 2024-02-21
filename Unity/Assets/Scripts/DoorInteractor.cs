@@ -31,7 +31,6 @@ public class DoorInteractor : MonoBehaviour
                 //poner canvas
                 if (nextLevel){
                     GameManager.instance.NextLevel();
-                    //Debug.Log("Siguiente nivel");
                 }
             }
         }
@@ -39,7 +38,6 @@ public class DoorInteractor : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if (other.gameObject.CompareTag("Finish")){
-            Debug.Log("Entra");
             nextLevel = true;
             doorInitializer.enabled = true;
         } else if (other.gameObject.CompareTag("FakeDoor")){

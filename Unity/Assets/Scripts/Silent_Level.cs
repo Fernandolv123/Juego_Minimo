@@ -26,9 +26,9 @@ public class Silent_Level : Level
             GameManager.instance.ManagerAudioSource().Pause();
             if (Time.time > silentTimer + 4f){
                 if(!audioWasPlayedSilent){
-                audio.PlayOneShot(chaseAudio);
-                Instantiate(zombieRunPrefab,zombieRunSpawner.transform.position,zombieRunSpawner.transform.rotation);
-                audioWasPlayedSilent = true;
+                    audio.PlayOneShot(chaseAudio);
+                    Instantiate(zombieRunPrefab,zombieRunSpawner.transform.position,zombieRunSpawner.transform.rotation);
+                    audioWasPlayedSilent = true;
                 }
             }
         } else {

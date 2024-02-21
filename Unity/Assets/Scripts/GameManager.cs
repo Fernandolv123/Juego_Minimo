@@ -140,11 +140,9 @@ public class GameManager : MonoBehaviour
         audio.PlayOneShot(audiosPaper[0]);
         //Esto provoca errores debido a la posicion en la que se encuentra dentro del canvas por lo que debemos restar esta position a la position máxima
         for (float i=-1000;i<=-160;i+=32){
-            Debug.Log("valor i: "+i);
             paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,i,0);
             yield return new WaitForSeconds(0.001f);
         }
-        Debug.Log("Entra aqui");
         paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,-160,0);
         rulesButton.GetComponent<Button>().interactable = true;
         yield return null;
@@ -157,7 +155,6 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.001f);
         }
         paperRules.active = false;
-        Debug.Log("Entra aqui tambien");
         paperRules.GetComponent<RectTransform>().localPosition = new Vector3(0,-1000,0);
         rulesButton.GetComponent<Button>().interactable = true;
         yield return null;

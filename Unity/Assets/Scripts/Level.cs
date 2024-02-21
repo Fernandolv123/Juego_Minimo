@@ -10,6 +10,10 @@ public class Level : MonoBehaviour
 
     public AudioClip chaseAudio;
     public AudioSource audio;
+
+    [Header("Base Level")]
+    public GameObject baseZombieRunPrefab;
+    public Transform baseZombieSpawner;
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -23,12 +27,12 @@ public class Level : MonoBehaviour
     protected virtual void Update()
     {
         if (active){
-            //Debug.Log("Estoy Activo"); 21:05
-                if (Time.time > timer+30){
+                if (Time.time > timer+20){
                         //Debug.Log("Ha entrado correctamente");
                         if (!audioWasPlayed){
-                        audio.PlayOneShot(chaseAudio);
-                        audioWasPlayed = true;
+                            Instantiate(baseZombieRunPrefab,baseZombieSpawner.position,baseZombieSpawner.rotation);
+                            audio.PlayOneShot(chaseAudio);
+                            audioWasPlayed = true;
                         }
                     }
                 } else {

@@ -4,7 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - zombieRunPrefab: {fileID: 8590062222623792339, guid: 24b414402ab255d4a936bb90ea1d71c3, type: 3}
   - chaseAudio: {fileID: 8300000, guid: 7ee840c19daad0847ba474987c8d7d27, type: 3}
+  - audio: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

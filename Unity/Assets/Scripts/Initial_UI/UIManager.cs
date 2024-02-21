@@ -21,4 +21,8 @@ public class UIManager : MonoBehaviour
         }
         UI[number].enabled = true;
     }
+
+    public void Exit(){
+        Application.Quit();
+    }
 }

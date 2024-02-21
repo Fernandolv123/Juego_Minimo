@@ -15,7 +15,6 @@ public class LevelAlucination : Level
     {
         base.Update();
         if (base.IsActive()){
-            Debug.Log("Entra");
         }
     }
 }

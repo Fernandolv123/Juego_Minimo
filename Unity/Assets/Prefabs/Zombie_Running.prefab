@@ -2889,6 +2889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioZombieStop: {fileID: 8300000, guid: eb75d2f3d6e2fa943844724e56526bc5, type: 3}
+  timeToDestroy: 7
 --- !u!65 &2307460128572140068
 BoxCollider:
   m_ObjectHideFlags: 0
