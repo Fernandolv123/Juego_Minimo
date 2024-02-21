@@ -1,0 +1,5 @@
+Builds/Juego_Minimo.exe filter=lfs diff=lfs merge=lfs -text
+Builds/Juego_Minimo_Data filter=lfs diff=lfs merge=lfs -text
+Builds/MonoBleedingEdge filter=lfs diff=lfs merge=lfs -text
+Builds/UnityCrashHandler64.exe filter=lfs diff=lfs merge=lfs -text
+Builds/UnityPlayer.dll filter=lfs diff=lfs merge=lfs -text
