@@ -37,7 +37,7 @@ public class Halucination_Level : Level
     {
         //base.Update();
         if (base.IsActive()) {
-            if (Input.GetKeyDown(KeyCode.S)){
+            if (Input.GetKeyDown(KeyCode.S) && Player.instance.GetCanRotate()){
                 safepoint=!safepoint;
                 playerLooking=!playerLooking;
             }
@@ -75,7 +75,7 @@ public class Halucination_Level : Level
     }
 
     IEnumerator CanvasImageSpawner() {
-            for (float i = 0; i <= 1f; i += Time.deltaTime*4)
+            for (float i = 0; i <= 1f; i += Time.deltaTime*3)
             {
                 if (i < 1){
                     canvasImage.color = new Color(canvasImage.color.r, canvasImage.color.g, canvasImage.color.b, i);

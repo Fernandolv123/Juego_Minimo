@@ -1196,8 +1196,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2.084155}
-  m_Center: {x: -0.14103699, y: 0, z: 1.2900949}
+  m_Size: {x: 2, y: 2, z: 6.868663}
+  m_Center: {x: -0.14103699, y: 0, z: 3.6823487}
 --- !u!1 &197364702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ab6b74f3c223d744b9e7de55236b450, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd9cdf17a7083ed4290cd222cf636bdb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

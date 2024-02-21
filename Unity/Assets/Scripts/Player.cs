@@ -22,9 +22,14 @@ public class Player : MonoBehaviour
     private int position = 1;
     private bool canMove = true;
     private bool canRotate=true;
+    public static Player instance;
+    public bool GetCanRotate(){
+        return canRotate;
+    }
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         StartCoroutine("Footsteps");
