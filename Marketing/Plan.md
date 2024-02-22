@@ -15,8 +15,8 @@ La razón de estas tres es simple, ya que todas soportan el formato de 'shorts',
 Estos serán videos en formato vertical con una duración máxima de 60 segundos, estos videos serán subidos con el movil para lograr una máxima visibilidad
 Existirán dos tipos de video en las redes creadas anteriormente:
  - Videos explicativos: El objetivo de estos videos es mostrar resumidamente las fases de desarrollo por las que he pasado durante el proceso de creación del juego, el objetivo es tener una cantidad moderada de estos intentando tratar todos los temas considerados relevantes como:
-    - Elección de motor de desarrollo
-   - creación del gdd
+    - creación del gdd
+   - Elección de motor de desarrollo
     - Assets y Asset Store
    - Git y github
         - issues
