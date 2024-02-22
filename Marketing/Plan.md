@@ -6,7 +6,8 @@ Cabe destacar que este plan de marketing estará principalmente dirigido a joven
 El objetivo principal es dar visibilidad a mi producto, por esto mismo el primer movimiento será la creación de un correo electrónico relacionado con el nombre del juego y crear con este distintas cuentas en:
  - YT
  - Tiktok
- - Instagram
+ - Instagram 
+
 La razón de estas tres es simple, ya que todas soportan el formato de 'shorts', por lo que haciendo un solo video, puedo lograr una mayor visibilidad al tener el contenido disponible en distintas plataformas.
 
 ## Elaboración de videos cortos
