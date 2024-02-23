@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public List<Transform> spawners;
     public Canvas[] UI;
     void Start(){
         if (UI.Length != 0)

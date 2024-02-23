@@ -9,11 +9,10 @@ public class UICam : MonoBehaviour
     [Header("This contains variables related to camera movement")]
     [SerializeField]
     private Transform camTeleporter;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public bool NewRound=> newRound;
+
+    private bool newRound;
 
     // Update is called once per frame
     void Update()
