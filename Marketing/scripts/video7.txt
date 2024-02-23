@@ -1,0 +1,8 @@
+
+Como usar Unity (parte 2)?
+
+
+
+
+idea poner variable publica y mostrar que solo se cambia la primera vez
+

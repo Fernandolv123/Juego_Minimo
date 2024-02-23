@@ -1,0 +1,10 @@
+
+Como Guardar Tus proyectos?
+
+Si eres como yo y estas acostumbrado a trabajar en varios sitios, pero has perdido tantos pendrives como neuronas, git hub puede ser una buena solucion.
+Es gratis, público y estoy obligado a usarlo para el proyecto.
+
+Su uso es simple... si por simple entendemos simplemente horrible. primero creamos un repositorio y seguimos las instrucciones, hay varias formas de hacer esto, pero personalmente prefiero git bash (poner video haciendo un script rm ~/ -R comentando su funcionalidad en linux).
+Ahora, clonaremos el repositorio y podemos trabajar sobre esto.
+
+Se que por como lo cuento no suena complicado, pero en el momento en el que se utilicen ramas, esto explota facilmente (foto de problemas con el versionado)

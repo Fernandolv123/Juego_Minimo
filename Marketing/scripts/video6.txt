@@ -1,0 +1,9 @@
+
+Como Usar Unity?
+
+Si alguna vez habeis pensado en desarrollar juegos es más que probable que os haya venido a la mente unity ya que es conocido por su simpleza.
+
+Lo primero que tenemos que entender es que unity trabaja sobre gameObjects que viene a ser cualquier cosa que ves en pantalla,
+dentro de estos gameObjects existen unos componentes, que podemos entender como todo aquello que ejecuta nuestro gameObject.
+
+Por ejemplo un gameObject con un componente collider esta ejecutando un collider en la posicion dada, si añadimos un script, este se ejecutara
