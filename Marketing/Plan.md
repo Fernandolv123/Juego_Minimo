@@ -29,6 +29,7 @@ Existirán dos tipos de video en las redes creadas anteriormente:
         - programacion de scripts en C#
         - programación de scripts en unity
         - Muestra de algunos niveles
+        - Q n A
    - Plan Marketing
     - Vision general final
    - ...
