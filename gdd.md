@@ -39,4 +39,9 @@ El objetivo del juego consiste en llevar una cuenta de los pasillos superados po
 
 ### Marketing
 
+Mi KPI serán las visitas recibidas en la página
 Creación de cuenta de instagram con el nombre del juego donde serán subidos distintos teasers e imagenes sobre el juego.
+
+#### KPI
+
+He decidido escojer como KPI el número de visitas recibidas en la página de itchio, esto debido a los videos subidos en diversas redes sociales, de esta forma puedo ver la influencia que estos han llegado a tener
