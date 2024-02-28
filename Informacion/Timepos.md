@@ -15,7 +15,16 @@
 | 6/02/24    | Unity   | 18:15   | 21:45    | 3h 30min   |
 | 07/02/24    | Unity   | 20:15   | 21:45    | 1h 30min   |
 | 08/02/24    | Marketing   | 19:20   | 21:55    | 2h 35min   |
-| Row 3    | Cell 8   | Cell 9   | Row 3    | Cell 8   |
+| 09/02/24    | Marketing   | 20:00   | 21:55    | 1h 55min   |
+| 20/02/24    | Marketing   | 19:50   | 21:52    | 2h 2min    |
+| 22/02/24    | Marketing   | 19:40   | 21:50    | 2h 10min   |
+| 23/02/24    | Marketing   | 20:04   | 21:21    | 1h 17min   |
+| 26/02/24    | Marketing   | 02:00   | 07:00    | 5h         |
+| 27/02/24    | Marketing   | 24:00   | 3:00     | 3h         |
+
+
+
+
 
 Total Unity: 19h 50min
-Total Marketing: 2h 35min
+Total Marketing: 17h 59min
