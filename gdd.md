@@ -3,7 +3,7 @@
 Este es un juego de terror en el que la única forma de no morir es seguir una serie de pautas aleatorias anotadas en una libreta al principio del juego
 
 ## Visión general
-<Nombre_del_Juego> es un juego de terror ambientado en un espacio claustrofóbico. Dadas mis limitaciones técnicas, las únicas direcciones en las que el personaje se moverá son delante y detras contando con otros inputs para diferentes acciones como voltearse.
+Hallway Laws es un juego de terror ambientado en un espacio claustrofóbico. Dadas mis limitaciones técnicas, las únicas direcciones en las que el personaje se moverá son delante y detras contando con otros inputs para diferentes acciones como voltearse.
 La cámara tendra un poco de libertad para poder mirar arriba y abajo pero no hacia los lados salvo que se añadan nuevas reglas que así lo requieran.
 
 ## Descripción del juego
