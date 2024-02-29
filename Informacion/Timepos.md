@@ -24,7 +24,7 @@
 
 
 
-
-
 Total Unity: 19h 50min
 Total Marketing: 17h 59min
+
+Nota: el tiempo de gdd, recopilación y organización no los he sumado porque no se a que perfil pertenecen (siendo recopilación y organización búsqueda de asset en la store y creación de carpetas en github) 
